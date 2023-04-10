@@ -44,8 +44,8 @@ function Footer() {
               textAlign: "center",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit, sed
-            do eiusmod tempor incididunt.
+            Transform your body and your life with our comprehensive <br />{" "}
+            workout programs and personalized nutrition plans.
           </Typography>
         </Box>
         <Box
@@ -61,7 +61,6 @@ function Footer() {
           <Grid container spacing={2} justifyContent="center">
             <Grid item xs={12} sm={4} md={2}>
               <Typography>
-                {" "}
                 <Link to="/workouts" className={classes.icon}>
                   Workout
                 </Link>
