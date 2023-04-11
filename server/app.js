@@ -6,7 +6,7 @@ import cors from "cors";
 config({ path: ".env" });
 
 export const app = express();
-
+// Establish a connection to MongoDB
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
