@@ -619,8 +619,9 @@ function Home() {
                     textAlign: "center",
                   }}
                 >
-                  "Going to the gym has transformed my body and my mindset."
-                  <br /> <b style={{ fontWeight: "700" }}>Mukta Singh</b>
+                  "Gym changed my life and helped me to become the best version
+                  of myself."
+                  <br /> <b style={{ fontWeight: "700" }}>Manish Verma</b>
                 </Typography>
               </Box>
               <Box
@@ -639,8 +640,9 @@ function Home() {
                     textAlign: "center",
                   }}
                 >
-                  "Going to the gym has transformed my body and my mindset."
-                  <br /> <b style={{ fontWeight: "700" }}>Mukta Singh</b>
+                  "I have transformed my body and achieved my fitness goals
+                  faster than I ever thought possible!"
+                  <br /> <b style={{ fontWeight: "700" }}>Sumit Jain</b>
                 </Typography>
               </Box>
               <Box
@@ -659,8 +661,9 @@ function Home() {
                     textAlign: "center",
                   }}
                 >
-                  "Going to the gym has transformed my body and my mindset."
-                  <br /> <b style={{ fontWeight: "700" }}>Mukta Singh</b>
+                  "It's a community of people dedicated to helping each other
+                  succeed."
+                  <br /> <b style={{ fontWeight: "700" }}>Arun Pal</b>
                 </Typography>
               </Box>
               <Box
@@ -679,8 +682,9 @@ function Home() {
                     textAlign: "center",
                   }}
                 >
-                  "Going to the gym has transformed my body and my mindset."
-                  <br /> <b style={{ fontWeight: "700" }}>Mukta Singh</b>
+                  "Rockway has everything you need to take your fitness to the
+                  next level."
+                  <br /> <b style={{ fontWeight: "700" }}>Sunil</b>
                 </Typography>
               </Box>
             </Slider>
