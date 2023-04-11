@@ -10,7 +10,6 @@ const AboutHeader = () => {
       {/* About header  */}
       <Box
         sx={{
-          // backgroundImage: `url(${abouth})`,
           backgroundImage: {
             xs: `url(${aboutheaderfsm})`,
             sm: `url(${aboutheaderfsm})`,
@@ -84,7 +83,7 @@ const AboutHeader = () => {
             sx={{
               fontSize: "14px",
               fontWeight: 700,
-              background: "#131316",
+              background: "transparent",
               color: "#fff",
               "&:hover": {
                 background: "transparent",

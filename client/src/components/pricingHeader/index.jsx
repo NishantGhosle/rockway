@@ -82,7 +82,7 @@ const PricingHeader = () => {
             sx={{
               fontSize: "14px",
               fontWeight: 700,
-              background: "#131316",
+              background: "transparent",
               color: "#fff",
               "&:hover": {
                 background: "transparent",
