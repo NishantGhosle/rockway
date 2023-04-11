@@ -188,51 +188,59 @@ function Navbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", p: 3 }}>
-      <Link to="/">
+      <Link to="/" onClick={() => window.scrollTo(0, 0)}>
         <img src={logo} width={"80%"} height={"20%"} alt="Rockway logo" />
       </Link>
       <Divider />
       <List role="menubar">
-        <ListItem role="none">
-          <Link
-            to="/home"
-            style={{
-              textDecoration: "none",
-              color: "#000",
-            }}
-          >
-            Home
-          </Link>
-        </ListItem>
-        <Divider />
-        <ListItem>
-          <Link to="/about" style={{ textDecoration: "none", color: "#000" }}>
-            About
-          </Link>
-        </ListItem>
-        <Divider />
-        <ListItem>
-          <Link
-            to="/workouts "
-            style={{ textDecoration: "none", color: "#000" }}
-          >
-            Workouts
-          </Link>
-        </ListItem>
-        <Divider />
-        <ListItem>
-          <Link to="/pricing" style={{ textDecoration: "none", color: "#000" }}>
-            Pricing
-          </Link>
-        </ListItem>
-        <Divider />
-        <ListItem>
-          <Link to="/blogs" style={{ textDecoration: "none", color: "#000" }}>
-            Blogs
-          </Link>
-        </ListItem>
-        <Divider />
-        <Link to="#" style={{ textDecoration: "none", color: "#000" }}>
+        <Link
+          to="/home"
+          style={{
+            textDecoration: "none",
+            color: "#000",
+          }}
+          onClick={() => window.scrollTo(0, 0)}
+        >
+          Home
+        </Link>
+        <Divider style={{ marginTop: 20 }} />
+        <Link
+          to="/about"
+          style={{ textDecoration: "none", color: "#000" }}
+          onClick={() => window.scrollTo(0, 0)}
+        >
+          About
+        </Link>
+        <Divider style={{ marginTop: 20 }} />
+        <Link
+          to="/workouts "
+          style={{ textDecoration: "none", color: "#000" }}
+          onClick={() => window.scrollTo(0, 0)}
+        >
+          Workouts
+        </Link>
+        <Divider style={{ marginTop: 20 }} />
+        <Link
+          to="/pricing"
+          style={{ textDecoration: "none", color: "#000" }}
+          onClick={() => window.scrollTo(0, 0)}
+        >
+          Pricing
+        </Link>
+        <Divider style={{ marginTop: 20 }} />
+        <Link
+          to="/blogs"
+          style={{ textDecoration: "none", color: "#000" }}
+          onClick={() => window.scrollTo(0, 0)}
+        >
+          Blogs
+        </Link>
+        <Divider style={{ marginTop: 20 }} />
+        <Link
+          to="#"
+          style={{ textDecoration: "none", color: "#000" }}
+          onClick={() => window.scrollTo(0, 0)}
+        >
           <Button
             disableRipple
             sx={{
@@ -247,7 +255,10 @@ function Navbar(props) {
           </Button>
         </Link>
         <br />
-        <Link to="#" style={{ textDecoration: "none", color: "#000" }}>
+        <Link
+          to="#"
+          style={{ marginTop: 2, textDecoration: "none", color: "#000" }}
+        >
           <Button
             disableRipple
             sx={{
@@ -303,7 +314,7 @@ function Navbar(props) {
               <>
                 <Grid container spacing={10}>
                   <Grid item xs={3}>
-                    <Link to="/">
+                    <Link to="/" onClick={() => window.scrollTo(0, 0)}>
                       <img
                         src={logo}
                         width={"45%"}
@@ -334,6 +345,7 @@ function Navbar(props) {
                               ? classes.activeLink0
                               : classes.link0
                           }`}
+                          onClick={() => window.scrollTo(0, 0)}
                         >
                           Home
                         </Link>
@@ -346,6 +358,7 @@ function Navbar(props) {
                               ? classes.activeLink1
                               : classes.link1
                           }`}
+                          onClick={() => window.scrollTo(0, 0)}
                         >
                           About
                         </Link>
@@ -358,6 +371,7 @@ function Navbar(props) {
                               ? classes.activeLink2
                               : classes.link2
                           }`}
+                          onClick={() => window.scrollTo(0, 0)}
                         >
                           Workouts
                         </Link>
@@ -370,6 +384,7 @@ function Navbar(props) {
                               ? classes.activeLink3
                               : classes.link3
                           }`}
+                          onClick={() => window.scrollTo(0, 0)}
                         >
                           Pricing
                         </Link>
@@ -382,6 +397,7 @@ function Navbar(props) {
                               ? classes.activeLink4
                               : classes.link4
                           }`}
+                          onClick={() => window.scrollTo(0, 0)}
                         >
                           Blogs
                         </Link>

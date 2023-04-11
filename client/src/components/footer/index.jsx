@@ -1,4 +1,3 @@
-import { Box, Typography, Grid } from "@mui/material";
 import React from "react";
 import logo from "../../images/logo.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -6,6 +5,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { makeStyles } from "@mui/styles";
 import { Link } from "react-router-dom";
+import { Typography, Grid, Box } from "@mui/material";
 
 const useStyles = makeStyles({
   icon: {
@@ -33,7 +33,9 @@ function Footer() {
         }}
       >
         <Box sx={{ color: "#fff" }}>
-          <img src={logo} width={"10%"} height={"80%"} alt="Rockway logo" />
+          <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+            <img src={logo} width={"20%"} height={"auto"} alt="Rockway logo" />
+          </Link>
         </Box>
         <Box sx={{ color: "#fff", pt: 5 }}>
           <Typography
@@ -60,47 +62,54 @@ function Footer() {
         >
           <Grid container spacing={2} justifyContent="center">
             <Grid item xs={12} sm={4} md={2}>
-              <Typography>
-                <Link to="/workouts" className={classes.icon}>
-                  Workout
-                </Link>
-              </Typography>
+              <Link
+                to="/workouts"
+                className={classes.icon}
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                Workout
+              </Link>
             </Grid>
             <Grid item xs={12} sm={4} md={2}>
-              <Typography>
-                {" "}
-                <Link to="/pricing" className={classes.icon}>
-                  Pricing
-                </Link>
-              </Typography>
+              <Link
+                to="/pricing"
+                className={classes.icon}
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                Pricing
+              </Link>
             </Grid>
             <Grid item xs={12} sm={4} md={2}>
-              <Typography>
-                <Link to="/about" className={classes.icon}>
-                  About
-                </Link>
-              </Typography>
+              <Link
+                to="/about"
+                className={classes.icon}
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                About
+              </Link>
             </Grid>
             <Grid item xs={12} sm={4} md={2}>
-              <Typography>
-                <Link to="/blogs" className={classes.icon}>
-                  Blogs
-                </Link>
-              </Typography>
+              <Link
+                to="/blogs"
+                className={classes.icon}
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                Blogs
+              </Link>
             </Grid>
           </Grid>
         </Box>
         <Box
           sx={{
             color: "#fff",
-            px: { xs: 15, sm: 15, md: 70 },
+            px: { xs: 12, sm: 12, md: 70 },
             pt: 6,
             fontSize: "15px",
             fontWeight: 400,
             lineHeight: "18.15px",
           }}
         >
-          <Grid container spacing={{ xs: 0, sm: 3, md: 0 }}>
+          <Grid container spacing={{ xs: 4, sm: 3, md: 0 }}>
             <Grid item xs={4}>
               <Link to="/">
                 <FacebookIcon className={classes.icon} />

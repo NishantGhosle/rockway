@@ -24,11 +24,11 @@ function App() {
           <Route exact path="/workouts" element={<Workouts />} />
           <Route exact path="/pricing" element={<Pricing />} />
           <Route exact path="/blogs" element={<Blogs />} />
-          <Route path="/paymentsuccess" element={<PaymentSuccess />} />
-          <Route path="/firstBlog" element={<FirstBlog />} />
-          <Route path="/secondBlog" element={<SecondBlog />} />
-          <Route path="/thirdBlog" element={<ThirdBlog />} />
-          <Route path="/fourthBlog" element={<FourthBlog />} />
+          <Route exact path="/paymentsuccess" element={<PaymentSuccess />} />
+          <Route exact path="/firstBlog" element={<FirstBlog />} />
+          <Route exact path="/secondBlog" element={<SecondBlog />} />
+          <Route exact path="/thirdBlog" element={<ThirdBlog />} />
+          <Route exact path="/fourthBlog" element={<FourthBlog />} />
         </Routes>
       </Router>
     </>

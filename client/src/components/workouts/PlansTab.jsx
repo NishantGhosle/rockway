@@ -43,8 +43,8 @@ function PlansTab() {
         <Grid container rowSpacing={5} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Card
             num={1}
-            name="Basic"
-            amount={20}
+            name="Lite"
+            amount={1500}
             checkoutHandler={checkoutHandler}
             content={
               <>
@@ -103,8 +103,8 @@ function PlansTab() {
           />
           <Card
             num={5}
-            name="Premium"
-            amount={35}
+            name="Standard"
+            amount={2000}
             personal="Personal"
             checkoutHandler={checkoutHandler}
             content={
@@ -178,8 +178,8 @@ function PlansTab() {
           />
           <Card
             num="unlimited"
-            name="Elite"
-            amount={49}
+            name="Premium"
+            amount={2500}
             personal="Personal trainer"
             drink="50% off drinks"
             checkoutHandler={checkoutHandler}

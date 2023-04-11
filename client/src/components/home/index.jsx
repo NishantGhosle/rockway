@@ -40,18 +40,18 @@ const useStyles = makeStyles({
   imageContainer: {
     position: "relative",
     display: "inline-block",
+    padding: 10,
     "& img": {
-      width: "93%",
+      maxWidth: "100%",
       height: "auto",
     },
   },
   textOverlay: {
     position: "absolute",
-    top: "80%",
-    left: "55%",
-    transform: "translate(-60%, -30%)",
-    padding: "3px",
-    width: "230px",
+    top: "75%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "85%",
     color: "#fff",
   },
 });
@@ -68,7 +68,7 @@ function Home() {
     infinite: true,
     centerPadding: matchesMd ? "20px" : "120px",
     slidesToScroll: 1,
-    slidesToShow: 3,
+    slidesToShow: 2,
     speed: 200,
   };
 
@@ -357,8 +357,8 @@ function Home() {
         <Grid container rowSpacing={5} columnSpacing={{ xs: 1, sm: 1, md: 3 }}>
           <Card
             num={1}
-            name="Basic"
-            amount={20}
+            name="Lite"
+            amount={1500}
             checkoutHandler={checkoutHandler}
             content={
               <>
@@ -417,8 +417,8 @@ function Home() {
           />
           <Card
             num={5}
-            name="Premium"
-            amount={35}
+            name="Standard"
+            amount={2000}
             personal="Personal"
             checkoutHandler={checkoutHandler}
             content={
@@ -492,8 +492,8 @@ function Home() {
           />
           <Card
             num="unlimited"
-            name="Elite"
-            amount={49}
+            name="Premium"
+            amount={2500}
             personal="Personal trainer"
             drink="50% off drinks"
             checkoutHandler={checkoutHandler}
@@ -606,13 +606,9 @@ function Home() {
               <Box
                 key={testone}
                 className={classes.imageContainer}
-                sx={{
-                  "&:hover": {
-                    transform: "scale(1.01)",
-                  },
-                }}
+                sx={{ "&:hover": { transform: "scale(1.01)" }, width: "100%" }}
               >
-                <img src={testone} alt="hello" width="93%" height="93%" />
+                <img src={testone} alt="hello" />
                 <Typography
                   className={classes.textOverlay}
                   style={{
@@ -630,13 +626,9 @@ function Home() {
               <Box
                 key={testtwo}
                 className={classes.imageContainer}
-                sx={{
-                  "&:hover": {
-                    transform: "scale(1.01)",
-                  },
-                }}
+                sx={{ "&:hover": { transform: "scale(1.01)" }, width: "100%" }}
               >
-                <img src={testtwo} alt="hello" width="93%" height="93%" />
+                <img src={testtwo} alt="hello" />
                 <Typography
                   className={classes.textOverlay}
                   style={{
@@ -647,21 +639,16 @@ function Home() {
                     textAlign: "center",
                   }}
                 >
-                  “Healthier lifestyle that has positively impacted all aspects
-                  of my life."
-                  <br /> <b style={{ fontWeight: "700" }}>Rahul Kumar</b>
+                  "Going to the gym has transformed my body and my mindset."
+                  <br /> <b style={{ fontWeight: "700" }}>Mukta Singh</b>
                 </Typography>
               </Box>
               <Box
                 key={testthree}
                 className={classes.imageContainer}
-                sx={{
-                  "&:hover": {
-                    transform: "scale(1.01)",
-                  },
-                }}
+                sx={{ "&:hover": { transform: "scale(1.01)" }, width: "100%" }}
               >
-                <img src={testthree} alt="hello" width="93%" height="93%" />
+                <img src={testthree} alt="hello" />
                 <Typography
                   className={classes.textOverlay}
                   style={{
@@ -672,20 +659,16 @@ function Home() {
                     textAlign: "center",
                   }}
                 >
-                  “Feeling energized and ready to take on any challenge."
-                  <br /> <b style={{ fontWeight: "700" }}>Bobby</b>
+                  "Going to the gym has transformed my body and my mindset."
+                  <br /> <b style={{ fontWeight: "700" }}>Mukta Singh</b>
                 </Typography>
               </Box>
               <Box
                 key={testfour}
                 className={classes.imageContainer}
-                sx={{
-                  "&:hover": {
-                    transform: "scale(1.01)",
-                  },
-                }}
+                sx={{ "&:hover": { transform: "scale(1.01)" }, width: "100%" }}
               >
-                <img src={testfour} alt="hello" width="93%" height="93%" />
+                <img src={testfour} alt="hello" />
                 <Typography
                   className={classes.textOverlay}
                   style={{
@@ -696,9 +679,8 @@ function Home() {
                     textAlign: "center",
                   }}
                 >
-                  “Feel so strong and empowered until I started going to the gym
-                  regularly”
-                  <br /> <b style={{ fontWeight: "700" }}>Pooja</b>
+                  "Going to the gym has transformed my body and my mindset."
+                  <br /> <b style={{ fontWeight: "700" }}>Mukta Singh</b>
                 </Typography>
               </Box>
             </Slider>

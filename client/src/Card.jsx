@@ -13,6 +13,7 @@ const Card = ({ content, name, amount, checkoutHandler }) => {
           "&:hover": {
             background: "#131316",
             color: "#fff",
+            transition: "all 0.5s ease-out",
           },
         }}
       >
@@ -47,7 +48,7 @@ const Card = ({ content, name, amount, checkoutHandler }) => {
           }}
         >
           {amount}
-          <span style={{ fontSize: "0.7em" }}>$</span>
+          <span style={{ fontSize: "0.7em" }}>rs</span>
         </Typography>
         <Typography>/month</Typography>
         <List
