@@ -55,7 +55,7 @@ const Card = ({ content, name, amount, checkoutHandler }) => {
           sx={{
             width: "100%",
             mt: 2,
-            px: { xs: 6, sm: 17, md: 0 },
+            px: { xs: 0, sm: 17, md: 0 },
           }}
         >
           {content}

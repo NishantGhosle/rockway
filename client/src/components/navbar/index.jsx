@@ -13,6 +13,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import { Stack, Grid } from "@mui/material";
 import logo from "../../images/logo.png";
+import logosm from "../../images/logosm.png";
 import { Link, useLocation } from "react-router-dom";
 import { makeStyles } from "@mui/styles";
 
@@ -189,9 +190,9 @@ function Navbar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", p: 3 }}>
       <Link to="/">
-        <img src={logo} width={"80%"} height={"20%"} alt="Rockway logo" />
+        <img src={logosm} width={"80%"} height={"20%"} alt="Rockway logo" />
       </Link>
-      <Divider />
+      <Divider style={{ marginTop: 30 }} />
       <List role="menubar">
         <Link
           to="/home"

@@ -40,7 +40,7 @@ const useStyles = makeStyles({
   imageContainer: {
     position: "relative",
     display: "inline-block",
-    padding: 10,
+    padding: { xs: 3, sm: 10, md: 10 },
     "& img": {
       maxWidth: "100%",
       height: "auto",
@@ -66,7 +66,7 @@ function Home() {
     centerMode: true,
     arrows: true,
     infinite: true,
-    centerPadding: matchesMd ? "20px" : "120px",
+    centerPadding: matchesMd ? "10px" : "120px",
     slidesToScroll: 1,
     slidesToShow: 2,
     speed: 200,
@@ -200,7 +200,7 @@ function Home() {
 
       {/* Training program */}
       <Box
-        sx={{ my: { xs: 10, sm: 20, md: 16 }, mx: { xs: 5, sm: 5, md: 15 } }}
+        sx={{ my: { xs: 10, sm: 20, md: 16 }, mx: { xs: 1, sm: 5, md: 15 } }}
       >
         <Typography
           mb={8}
@@ -342,7 +342,7 @@ function Home() {
       </Box>
 
       {/* Pricing  */}
-      <Box sx={{ my: { md: 16 }, mx: { xs: 4.5, sm: 10, md: 20 } }}>
+      <Box sx={{ my: { md: 16 }, mx: { xs: 5, sm: 5, md: 20 } }}>
         <Typography
           mb={8}
           sx={{
@@ -606,7 +606,11 @@ function Home() {
               <Box
                 key={testone}
                 className={classes.imageContainer}
-                sx={{ "&:hover": { transform: "scale(1.01)" }, width: "100%" }}
+                sx={{
+                  px: 1,
+                  "&:hover": { transform: "scale(1.01)" },
+                  width: "100%",
+                }}
               >
                 <img src={testone} alt="hello" />
                 <Typography
@@ -627,7 +631,11 @@ function Home() {
               <Box
                 key={testtwo}
                 className={classes.imageContainer}
-                sx={{ "&:hover": { transform: "scale(1.01)" }, width: "100%" }}
+                sx={{
+                  px: 1,
+                  "&:hover": { transform: "scale(1.01)" },
+                  width: "100%",
+                }}
               >
                 <img src={testtwo} alt="hello" />
                 <Typography
@@ -648,7 +656,11 @@ function Home() {
               <Box
                 key={testthree}
                 className={classes.imageContainer}
-                sx={{ "&:hover": { transform: "scale(1.01)" }, width: "100%" }}
+                sx={{
+                  px: 1,
+                  "&:hover": { transform: "scale(1.01)" },
+                  width: "100%",
+                }}
               >
                 <img src={testthree} alt="hello" />
                 <Typography
@@ -669,7 +681,11 @@ function Home() {
               <Box
                 key={testfour}
                 className={classes.imageContainer}
-                sx={{ "&:hover": { transform: "scale(1.01)" }, width: "100%" }}
+                sx={{
+                  px: 1,
+                  "&:hover": { transform: "scale(1.01)" },
+                  width: "100%",
+                }}
               >
                 <img src={testfour} alt="hello" />
                 <Typography

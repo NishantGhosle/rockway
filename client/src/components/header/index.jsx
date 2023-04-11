@@ -134,7 +134,7 @@ const Header = () => {
             <Box
               sx={{
                 position: "absolute",
-                bottom: 30,
+                bottom: { xs: 40, sm: 30, md: 30 },
                 right: 0,
                 display: "flex",
                 flexDirection: { xs: "column", sm: "column" },
