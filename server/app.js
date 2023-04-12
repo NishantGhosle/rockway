@@ -3,8 +3,7 @@ import { config } from "dotenv";
 import paymentRoute from "./routes/paymentRoutes.js";
 import cors from "cors";
 // config({ path: "./config/config.env" });
-// config({ path: ".env" });
-config({ path: `${process.cwd()}/.env` });
+config({ path: ".env" });
 
 export const app = express();
 app.use(cors());
