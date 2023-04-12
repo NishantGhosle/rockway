@@ -17,7 +17,7 @@ function CollectionsTab() {
     infinite: true,
     centerPadding: matchesMd ? "20px" : "120px",
     slidesToScroll: 1,
-    slidesToShow: 2,
+    slidesToShow: 1.9,
     speed: 200,
   };
 

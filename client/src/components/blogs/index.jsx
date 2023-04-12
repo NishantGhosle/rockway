@@ -21,7 +21,7 @@ function Blogs() {
     infinite: true,
     centerPadding: matchesMd ? "20px" : "120px",
     slidesToScroll: 1,
-    slidesToShow: 2,
+    slidesToShow: 1.9,
     speed: 200,
   };
 
@@ -30,7 +30,7 @@ function Blogs() {
       <Navbar />
       <BlogHeader />
       {/* top picks */}
-      <Box sx={{ mt: 10, mx: { xs: 5, sm: 5, md: 10 } }}>
+      <Box sx={{ mt: 10, mx: { xs: 2, sm: 5, md: 10 } }}>
         <Typography
           marginY={{ xs: "55px", sm: "55px", md: "25px" }}
           style={{
@@ -119,7 +119,7 @@ function Blogs() {
         </Box>
       </Box>
       {/* health tips */}
-      <Box sx={{ mt: 10, mx: { xs: 5, sm: 5, md: 10 } }}>
+      <Box sx={{ mt: 10, mx: { xs: 2, sm: 5, md: 10 } }}>
         <Typography
           marginY="25px"
           style={{
@@ -196,7 +196,7 @@ function Blogs() {
         </Box>
       </Box>
       {/* food ad beverages */}
-      <Box sx={{ mt: 10, mx: { xs: 5, sm: 5, md: 10 } }}>
+      <Box sx={{ mt: 10, mx: { xs: 2, sm: 5, md: 10 } }}>
         <Typography
           marginY="25px"
           style={{
@@ -273,7 +273,7 @@ function Blogs() {
         </Box>
       </Box>
       {/* warm up combo */}
-      <Box sx={{ mt: 10, mx: { xs: 5, sm: 5, md: 10 } }}>
+      <Box sx={{ mt: 10, mx: { xs: 2, sm: 5, md: 10 } }}>
         <Typography
           marginY="25px"
           style={{

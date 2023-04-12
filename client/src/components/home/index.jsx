@@ -43,12 +43,11 @@ const useStyles = makeStyles({
     padding: { xs: 3, sm: 10, md: 10 },
     "& img": {
       maxWidth: "100%",
-      height: "auto",
     },
   },
   textOverlay: {
     position: "absolute",
-    top: "75%",
+    top: "85%",
     left: "50%",
     transform: "translate(-50%, -50%)",
     width: "85%",
@@ -78,7 +77,7 @@ function Home() {
     infinite: true,
     centerPadding: matchesMd ? "20px" : "120px",
     slidesToScroll: 1,
-    slidesToShow: 2,
+    slidesToShow: 1.5,
     speed: 200,
   };
   const next1 = () => {
@@ -609,7 +608,6 @@ function Home() {
                 sx={{
                   px: 1,
                   "&:hover": { transform: "scale(1.01)" },
-                  width: "100%",
                 }}
               >
                 <img src={testone} alt="hello" />
@@ -619,7 +617,7 @@ function Home() {
                     fontWeight: 400,
                     fontSize: "12px",
                     fontStyle: "italic",
-                    lineHeight: "26px",
+                    lineHeight: "16px",
                     textAlign: "center",
                   }}
                 >
@@ -634,7 +632,6 @@ function Home() {
                 sx={{
                   px: 1,
                   "&:hover": { transform: "scale(1.01)" },
-                  width: "100%",
                 }}
               >
                 <img src={testtwo} alt="hello" />
@@ -644,12 +641,12 @@ function Home() {
                     fontWeight: 400,
                     fontSize: "12px",
                     fontStyle: "italic",
-                    lineHeight: "26px",
+                    lineHeight: "16px",
                     textAlign: "center",
                   }}
                 >
                   "I have transformed my body and achieved my fitness goals
-                  faster than I ever thought possible!"
+                  faster than I ever"
                   <br /> <b style={{ fontWeight: "700" }}>Sumit Jain</b>
                 </Typography>
               </Box>
@@ -659,7 +656,6 @@ function Home() {
                 sx={{
                   px: 1,
                   "&:hover": { transform: "scale(1.01)" },
-                  width: "100%",
                 }}
               >
                 <img src={testthree} alt="hello" />
@@ -669,7 +665,7 @@ function Home() {
                     fontWeight: 400,
                     fontSize: "12px",
                     fontStyle: "italic",
-                    lineHeight: "26px",
+                    lineHeight: "16px",
                     textAlign: "center",
                   }}
                 >
@@ -684,7 +680,6 @@ function Home() {
                 sx={{
                   px: 1,
                   "&:hover": { transform: "scale(1.01)" },
-                  width: "100%",
                 }}
               >
                 <img src={testfour} alt="hello" />
@@ -694,7 +689,7 @@ function Home() {
                     fontWeight: 400,
                     fontSize: "12px",
                     fontStyle: "italic",
-                    lineHeight: "26px",
+                    lineHeight: "16px",
                     textAlign: "center",
                   }}
                 >
