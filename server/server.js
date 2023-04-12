@@ -9,6 +9,6 @@ export const instance = new Razorpay({
   key_secret: process.env.RAZORPAY_APT_SECRET,
 });
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 8080;
 
 app.listen(port, () => console.log(`Server is working on ${port}`));

@@ -3,10 +3,10 @@ import { config } from "dotenv";
 import paymentRoute from "./routes/paymentRoutes.js";
 import cors from "cors";
 // config({ path: "./config/config.env" });
-config({ path: ".env" });
+// config({ path: ".env" });
+config({ path: `${process.cwd()}/.env` });
 
 export const app = express();
-// Establish a connection to MongoDB
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
