@@ -4,6 +4,7 @@ import WorkoutHeader from "../workoutHeader";
 import WorkoutTabs from "./WorkoutTabs";
 import Navbar from "../navbar";
 import Footer from "../footer";
+import MapContainer from "../../MapContainer";
 
 function Workouts() {
   return (
@@ -31,6 +32,12 @@ function Workouts() {
         </Typography>
         {/* tabs */}
         <WorkoutTabs />
+      </Box>
+      {/* Map */}
+      <Box
+        sx={{ my: { xs: 10, sm: 16, md: 16 }, mx: { xs: 10, sm: 5, md: 25 } }}
+      >
+        <MapContainer />
       </Box>
       <Footer />
     </>

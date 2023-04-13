@@ -10,6 +10,7 @@ import firstpillar from "../../images/firstpillar.png";
 import secondpillar from "../../images/secondpillar.png";
 import Navbar from "../navbar";
 import Footer from "../footer";
+import MapContainer from "../../MapContainer";
 
 function About() {
   return (
@@ -280,6 +281,12 @@ function About() {
             </Box>
           </Grid>
         </Grid>
+      </Box>
+      {/* Map */}
+      <Box
+        sx={{ my: { xs: 10, sm: 16, md: 16 }, mx: { xs: 10, sm: 5, md: 25 } }}
+      >
+        <MapContainer />
       </Box>
       <Footer />
     </>

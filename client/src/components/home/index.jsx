@@ -97,13 +97,17 @@ function Home() {
     sliderRef.current.slickPrev();
   };
 
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+
   const checkoutHandler = async (amount) => {
     const {
       data: { key },
-    } = await axios.get("http://www.localhost:4000/api/getkey");
+    } = await axios.get(`${BACKEND_URL}/api/getkey`);
+    // } = await axios.get("http://www.localhost:4000/api/getkey");
     const {
       data: { order },
-    } = await axios.post("http://localhost:4000/api/checkout", {
+    } = await axios.post(`${BACKEND_URL}/api/checkout`, {
+      // } = await axios.post("http://localhost:4000/api/checkout", {
       amount,
     });
 
@@ -114,7 +118,8 @@ function Home() {
       name: "Rockway Fitness Club",
       image: logoo,
       order_id: order.id,
-      callback_url: "http://localhost:4000/api/paymentverification",
+      // callback_url: "http://localhost:4000/api/paymentverification",
+      callback_url: `${BACKEND_URL}/api/paymentverification`,
       notes: {
         address: "Bhopal",
       },

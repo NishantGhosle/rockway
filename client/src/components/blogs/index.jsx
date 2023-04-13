@@ -9,6 +9,7 @@ import BlogHeader from "../blogHeader";
 import Footer from "../footer";
 import Navbar from "../navbar";
 import { Link } from "react-router-dom";
+import MapContainer from "../../MapContainer";
 
 function Blogs() {
   const theme = useTheme();
@@ -348,6 +349,12 @@ function Blogs() {
             </Link>
           </Slider>
         </Box>
+      </Box>
+      {/* Map */}
+      <Box
+        sx={{ my: { xs: 10, sm: 16, md: 16 }, mx: { xs: 10, sm: 5, md: 25 } }}
+      >
+        <MapContainer />
       </Box>
       <Footer />
     </>

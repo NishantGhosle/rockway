@@ -9,6 +9,7 @@ import Navbar from "../navbar";
 import Card from "../../Card";
 import axios from "axios";
 import logoo from "../../images/logoo.jpg";
+import MapContainer from "../../MapContainer";
 
 function Pricing() {
   const checkoutHandler = async (amount) => {
@@ -293,6 +294,12 @@ function Pricing() {
             }
           />
         </Grid>
+      </Box>
+      {/* Map */}
+      <Box
+        sx={{ my: { xs: 10, sm: 16, md: 16 }, mx: { xs: 10, sm: 5, md: 25 } }}
+      >
+        <MapContainer />
       </Box>
       <Footer />
     </>
