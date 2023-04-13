@@ -2,7 +2,6 @@ import express from "express";
 import { config } from "dotenv";
 import paymentRoute from "./routes/paymentRoutes.js";
 import cors from "cors";
-// config({ path: "./config/config.env" });
 config({ path: ".env" });
 
 export const app = express();

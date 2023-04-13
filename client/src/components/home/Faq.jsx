@@ -89,7 +89,10 @@ export default function Faq() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>Yes, You can</Typography>
+              <Typography>
+                Yes, you can pay for your membership by cash. Please visit our
+                gym reception during business hours to complete your payment.
+              </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion
@@ -122,7 +125,11 @@ export default function Faq() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>After 18</Typography>
+              <Typography>
+                You must be at least 16 years old to join our gym. We prioritize
+                safety and well-being for our members and require a legal
+                guardian's signature for anyone under 18 years old.
+              </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion
@@ -155,7 +162,11 @@ export default function Faq() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>No</Typography>
+              <Typography>
+                We take the privacy of our members seriously and ensure all
+                personal data is securely stored and only used for gym-related
+                purposes.
+              </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion
@@ -188,7 +199,11 @@ export default function Faq() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>Yes</Typography>
+              <Typography>
+                Yes, we offer lockers for our members to securely store their
+                belongings during their workout. Please bring your own lock or
+                purchase one at our gym reception.
+              </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion
@@ -221,7 +236,11 @@ export default function Faq() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>You can directly contact</Typography>
+              <Typography>
+                To cancel your membership, please notify us in writing or via
+                email at least 30 days prior to your desired cancellation date.
+                Early termination fees may apply.
+              </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion
@@ -255,7 +274,11 @@ export default function Faq() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>Yes</Typography>
+              <Typography>
+                Yes, we have water fountains and a hydration station available
+                for our members to use. Please bring a refillable water bottle
+                to reduce waste and stay hydrated during your workout.
+              </Typography>
             </AccordionDetails>
           </Accordion>
         </Grid>

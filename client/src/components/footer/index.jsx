@@ -111,7 +111,7 @@ function Footer() {
         >
           <Grid container spacing={{ xs: 4, sm: 3, md: 0 }}>
             <Grid item xs={4}>
-              <Link to="/">
+              <Link to="https://www.facebook.com/rockwayfitness/">
                 <FacebookIcon className={classes.icon} />
               </Link>
             </Grid>
@@ -122,7 +122,7 @@ function Footer() {
               </Link>
             </Grid>
             <Grid item xs={4}>
-              <Link to="/">
+              <Link to="https://www.instagram.com/rockway_fitness/?hl=en">
                 {" "}
                 <InstagramIcon className={classes.icon} />
               </Link>

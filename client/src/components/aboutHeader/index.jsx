@@ -3,6 +3,7 @@ import { Box, Button, Typography } from "@mui/material";
 import aboutheaderf from "../../images/aboutheaderf.jpg";
 import aboutheaderfsm from "../../images/aboutheaderfsm.png";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { Link } from "react-router-dom";
 
 const AboutHeader = () => {
   return (
@@ -56,47 +57,51 @@ const AboutHeader = () => {
             Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit.
             Tincidunt
           </Typography>
-          <Button
-            disableRipple
-            sx={{
-              width: "159px",
-              fontSize: "14px",
-              fontWeight: 700,
-              lineHeight: 18,
-              height: "46px",
-              border: 1,
-              background: "#FFFFFF",
-              color: "#131316",
-              borderRadius: "4px",
-              transition: "all 0.3s ease-out",
-              "&:hover": {
+          <Link to="/pricing" style={{ textDecoration: "none" }}>
+            <Button
+              disableRipple
+              sx={{
+                width: "159px",
+                fontSize: "14px",
+                fontWeight: 700,
+                lineHeight: 18,
+                height: "46px",
                 border: 1,
+                background: "#FFFFFF",
+                color: "#131316",
+                borderRadius: "4px",
+                transition: "all 0.3s ease-out",
+                "&:hover": {
+                  border: 1,
+                  background: "transparent",
+                  color: "#ffffff",
+                },
+              }}
+            >
+              JOIN NOW
+            </Button>
+          </Link>
+          <Link to="/pricing" style={{ textDecoration: "none" }}>
+            <Button
+              disableRipple
+              sx={{
+                fontSize: "14px",
+                fontWeight: 700,
                 background: "transparent",
-                color: "#ffffff",
-              },
-            }}
-          >
-            JOIN NOW
-          </Button>
-          <Button
-            disableRipple
-            sx={{
-              fontSize: "14px",
-              fontWeight: 700,
-              background: "transparent",
-              color: "#fff",
-              "&:hover": {
-                background: "transparent",
-                color: "#FF0103",
-              },
-              "&:focus": {
-                outline: "none",
-              },
-            }}
-          >
-            FREE ROUTINE PLAN
-            <ArrowRightAltIcon />
-          </Button>
+                color: "#fff",
+                "&:hover": {
+                  background: "transparent",
+                  color: "#FF0103",
+                },
+                "&:focus": {
+                  outline: "none",
+                },
+              }}
+            >
+              FREE ROUTINE PLAN
+              <ArrowRightAltIcon />
+            </Button>
+          </Link>
         </Box>
       </Box>
     </>
