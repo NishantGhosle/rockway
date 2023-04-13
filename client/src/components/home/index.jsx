@@ -342,7 +342,7 @@ function Home() {
       </Box>
 
       {/* Pricing  */}
-      <Box sx={{ my: { md: 16 }, mx: { xs: 5, sm: 5, md: 20 } }}>
+      <Box sx={{ my: { md: 16 }, mx: { xs: 2, sm: 5, md: 20 } }}>
         <Typography
           mb={8}
           sx={{
@@ -585,7 +585,7 @@ function Home() {
 
       {/* Testimonials */}
       <Box
-        sx={{ my: { xs: 10, sm: 20, md: 16 }, mx: { xs: 5, sm: 5, md: 10 } }}
+        sx={{ my: { xs: 10, sm: 20, md: 16 }, mx: { xs: 2, sm: 5, md: 10 } }}
       >
         <Grid container spacing={5}>
           <Grid item xs={12} sm={12} md={4}>
@@ -749,7 +749,7 @@ function Home() {
 
       {/* Map */}
       <Box
-        sx={{ my: { xs: 10, sm: 16, md: 16 }, mx: { xs: 10, sm: 5, md: 25 } }}
+        sx={{ my: { xs: 10, sm: 16, md: 16 }, mx: { xs: 7, sm: 5, md: 25 } }}
       >
         <MapContainer />
       </Box>

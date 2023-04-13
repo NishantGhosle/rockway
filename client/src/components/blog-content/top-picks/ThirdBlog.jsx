@@ -4,6 +4,7 @@ import Footer from "../../footer";
 import { Box, Typography } from "@mui/material";
 import BlogHeadertwo from "./blogHeadertwo";
 import ythird from "../../../images/ythird.jpg";
+import MapContainer from "../../../MapContainer";
 
 function ThirdBlog() {
   return (
@@ -73,6 +74,12 @@ function ThirdBlog() {
         </Typography>{" "}
       </Box>
 
+      {/* Map */}
+      <Box
+        sx={{ my: { xs: 10, sm: 16, md: 16 }, mx: { xs: 7, sm: 5, md: 25 } }}
+      >
+        <MapContainer />
+      </Box>
       <Footer />
     </>
   );

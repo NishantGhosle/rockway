@@ -284,7 +284,7 @@ function About() {
       </Box>
       {/* Map */}
       <Box
-        sx={{ my: { xs: 10, sm: 16, md: 16 }, mx: { xs: 10, sm: 5, md: 25 } }}
+        sx={{ my: { xs: 10, sm: 16, md: 16 }, mx: { xs: 7, sm: 5, md: 25 } }}
       >
         <MapContainer />
       </Box>

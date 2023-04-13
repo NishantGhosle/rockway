@@ -4,6 +4,7 @@ import Footer from "../../footer";
 import { Box, Typography } from "@mui/material";
 import BlogHeadertwo from "./blogHeadertwo";
 import ysecond from "../../../images/ysecond.jpg";
+import MapContainer from "../../../MapContainer";
 
 function SecondBlog() {
   return (
@@ -65,6 +66,12 @@ function SecondBlog() {
           goals. So why not sign up for a gym membership today and start working
           towards a healthier, happier you!
         </Typography>{" "}
+      </Box>
+      {/* Map */}
+      <Box
+        sx={{ my: { xs: 10, sm: 16, md: 16 }, mx: { xs: 7, sm: 5, md: 25 } }}
+      >
+        <MapContainer />
       </Box>
       <Footer />
     </>

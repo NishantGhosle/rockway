@@ -39,7 +39,7 @@ function PlansTab() {
   };
   return (
     <>
-      <Box sx={{ my: { md: 16 }, mx: { xs: 2, sm: 4.5, md: 5 } }}>
+      <Box sx={{ my: { md: 16 }, mx: { xs: 0, sm: 4.5, md: 5 } }}>
         <Grid container rowSpacing={5} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Card
             num={1}

@@ -24,7 +24,7 @@ function Footer() {
     <>
       <Box
         sx={{
-          mt: { xs: 100, sm: 70, md: 70 },
+          mt: { xs: 70, sm: 70, md: 70 },
           textAlign: "center",
           background: "#131316",
           height: "auto",

@@ -53,7 +53,7 @@ function Pricing() {
       <Box
         sx={{
           my: { xs: 10, sm: 10, md: 16 },
-          mx: { xs: 4.5, sm: 4.5, md: 20 },
+          mx: { xs: 2, sm: 4.5, md: 20 },
         }}
       >
         <Typography
@@ -297,7 +297,7 @@ function Pricing() {
       </Box>
       {/* Map */}
       <Box
-        sx={{ my: { xs: 10, sm: 16, md: 16 }, mx: { xs: 10, sm: 5, md: 25 } }}
+        sx={{ my: { xs: 10, sm: 16, md: 16 }, mx: { xs: 7, sm: 5, md: 25 } }}
       >
         <MapContainer />
       </Box>
