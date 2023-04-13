@@ -35,6 +35,7 @@ import { Link } from "react-router-dom";
 import { makeStyles } from "@mui/styles";
 import axios from "axios";
 import Card from "../../Card";
+import MapContainer from "../../MapContainer";
 
 const useStyles = makeStyles({
   imageContainer: {
@@ -744,6 +745,13 @@ function Home() {
           FAQ.
         </Typography>
         <Faq />
+      </Box>
+
+      {/* Map */}
+      <Box
+        sx={{ my: { xs: 10, sm: 16, md: 16 }, mx: { xs: 10, sm: 5, md: 25 } }}
+      >
+        <MapContainer />
       </Box>
       <Footer />
     </>
