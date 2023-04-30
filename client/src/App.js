@@ -11,6 +11,7 @@ import FirstBlog from "./components/blog-content/top-picks/FirstBlog";
 import SecondBlog from "./components/blog-content/top-picks/SecondBlog";
 import ThirdBlog from "./components/blog-content/top-picks/ThirdBlog";
 import FourthBlog from "./components/blog-content/top-picks/FourthBlog";
+import Contact from "./components/contact";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/workouts" element={<Workouts />} />
           <Route exact path="/pricing" element={<Pricing />} />
           <Route exact path="/blogs" element={<Blogs />} />
+          <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/paymentsuccess" element={<PaymentSuccess />} />
           <Route exact path="/firstBlog" element={<FirstBlog />} />
           <Route exact path="/secondBlog" element={<SecondBlog />} />

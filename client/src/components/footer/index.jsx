@@ -109,7 +109,7 @@ function Footer() {
             lineHeight: "18.15px",
           }}
         >
-          <Grid container spacing={{ xs: 4, sm: 3, md: 0 }}>
+          <Grid container spacing={{ xs: 4, sm: 3, md: 4 }}>
             <Grid item xs={4}>
               <Link to="https://www.facebook.com/rockwayfitness/">
                 <FacebookIcon className={classes.icon} />

@@ -175,6 +175,37 @@ const useStyles = makeStyles({
       color: "#fff",
     },
   },
+  activeLink5: {
+    background: "#fff",
+    textDecoration: "none",
+    width: "80px",
+    fontWeight: 500,
+    height: "21px",
+    paddingLeft: "12px",
+    paddingTop: "2px",
+    lineHeight: "18px",
+    padding: "2px",
+    color: "#000",
+    "&:hover": {
+      textDecoration: "none",
+      color: "#000",
+    },
+  },
+  link5: {
+    textDecoration: "none",
+    width: "86px",
+    fontWeight: 500,
+    height: "21px",
+    paddingLeft: "12px",
+    paddingTop: "2px",
+    lineHeight: "18px",
+    padding: "2px",
+    color: "#fff",
+    "&:hover": {
+      textDecoration: "none",
+      color: "#fff",
+    },
+  },
 });
 
 function Navbar(props) {
@@ -218,6 +249,10 @@ function Navbar(props) {
         <Divider style={{ marginTop: 20 }} />
         <Link to="/blogs" style={{ textDecoration: "none", color: "#000" }}>
           Blogs
+        </Link>
+        <Divider style={{ marginTop: 20 }} />
+        <Link to="/contact" style={{ textDecoration: "none", color: "#000" }}>
+          Contact
         </Link>
         <Divider style={{ marginTop: 20 }} />
         <Link to="#" style={{ textDecoration: "none", color: "#000" }}>
@@ -375,6 +410,18 @@ function Navbar(props) {
                           }`}
                         >
                           Blogs
+                        </Link>
+                      </ListItem>
+                      <ListItem role="none">
+                        <Link
+                          to="/contact"
+                          className={`${
+                            location.pathname === "/contact"
+                              ? classes.activeLink5
+                              : classes.link5
+                          }`}
+                        >
+                          Contact
                         </Link>
                       </ListItem>
                     </List>
